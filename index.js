@@ -2,6 +2,7 @@ const axios = require("axios")
 const fs = require("fs")
 const { parse } = require('json2csv')
 const prompt = require('prompt-sync')()
+const config = require("./config.json")
 
 async function run(){
     storeCredentials()
@@ -56,21 +57,21 @@ async function getAllCourses(credentials){
     let courses = data.hits.hits
 
     let courseDetails = courses.map((course) => {
-        return {
-            title: course._source.title,
-            status: course._source.status
-        }
-        
+        let details = {}
+        config.fields.forEach((field) => {
+            details[field] = course._source[field]
+            
+        })  
+        return details      
     })
-
     return courseDetails
 }
 
 function createFile(courses){
-    const fields = ['title', 'status']
+    const fields = config.fields
     const opts = { fields }
     const csv = parse(courses, opts);
-    fs.writeFileSync("./courses.csv", csv)
+    fs.writeFileSync(config.outputFile, csv)
 }
 
 run()
