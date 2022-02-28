@@ -43,4 +43,11 @@ The resulting `credentials.json` file should look like this:
 }
 ```
 
-It will then try and get all the courses available in the catalogue and store them in the `courses.csv` file.
+It will then try and get all the courses available in the catalogue and store them in the `courses.csv` file. This is how it'll look like in the terminal:
+
+```
+🔎 Getting courses...
+📖 Found 1010 courses. Saving them to "courses.csv"...
+🗄 "courses.csv" file created
+✅ Done!
+```
