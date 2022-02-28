@@ -1,0 +1,18 @@
+{
+  "name": "all-courses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "json2csv": "^5.0.7",
+    "prompt-sync": "^4.2.0"
+  }
+}
