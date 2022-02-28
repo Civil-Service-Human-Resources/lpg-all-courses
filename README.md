@@ -18,7 +18,7 @@ cd lpg-all-courses
 
 ### 2. Run the script
 
-To run the script to get all the courses, within the `all-courses` directory run the `run.sh` script:
+To run the script to get all the courses, within the `lpg-all-courses` directory run these lines within your Terminal:
 
 <details>
     <summary>Mac / Linux</summary>
