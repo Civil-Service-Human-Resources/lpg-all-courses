@@ -27,10 +27,7 @@ To run the script to get all the courses, within the `all-courses` directory run
 
 <details>
     <summary>Windows</summary>
-<pre><code>docker run -it --rm \
-    -v $PWD:/all-courses \
-    -w /all-courses \
-    node:17.6.0-slim bash -c "npm i && npm start"</code></pre>
+<pre><code>docker run -it --rm -v $PWD:/all-courses -w /all-courses node:17.6.0-slim bash -c "npm i && npm start"</code></pre>
 </details>
 
 This script will generate a CSV file called `courses.csv` in that directory with all the courses plus their status.
