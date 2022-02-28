@@ -7,7 +7,8 @@ This is a script to run to create a CSV file of all courses that exist in the le
 ### 1. Clone this repo
 
 ```sh
-git clone ...
+git clone https://github.com/Civil-Service-Human-Resources/lpg-all-courses.git
+cd lpg-all-courses
 ```
 
 ### 2. Run the script
