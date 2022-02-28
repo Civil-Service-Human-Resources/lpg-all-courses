@@ -74,3 +74,15 @@ The resulting `courses.csv` file should look like this when opened with a text e
 "Course 3","Draft"
 "Course 4","Archived"
 ```
+
+## Configuration
+
+You can change various settings by editing the `config.json` file.
+
+### Add and remove fields from the output
+
+By default, the output file contains the "title" and "status" of each course. You can add or remove fields to be included in the output by updating the `fields` array in the `config.json` file.
+
+### Change the name of the output file
+
+By default, the output file is `courses.csv`. You can change the name of the file by editing the value of `outputFile` in the `config.json` file.
