@@ -4,6 +4,11 @@ This is a script to run to create a CSV file of all courses that exist in the le
 
 ## Running the script
 
+### Prerequisites
+
+1. You will need to have Docker installed and running
+2. You will need to have the Elastic Search server credentials at hand. This includes, the server URL, username and password.
+
 ### 1. Clone this repo
 
 ```sh
