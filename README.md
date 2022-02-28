@@ -28,7 +28,7 @@ To run the script to get all the courses, within the `all-courses` directory run
 <details>
     <summary>Windows</summary>
     In Powershell, run:
-    
+
 <pre><code>docker run -it --rm -v ${PWD}:/all-courses -w /all-courses node:17.6.0-slim bash -c "npm i && npm start"</code></pre>
 </details>
 
@@ -63,4 +63,14 @@ It will then try and get all the courses available in the catalogue and store th
 📖 Found 1010 courses. Saving them to "courses.csv"...
 🗄 "courses.csv" file created
 ✅ Done!
+```
+
+The resulting `courses.csv` file should look like this when opened with a text editor:
+
+```
+"title","status"
+"Course 1","Published"
+"Course 2","Published"
+"Course 3","Draft"
+"Course 4","Archived"
 ```
