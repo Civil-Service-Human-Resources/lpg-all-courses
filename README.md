@@ -18,7 +18,9 @@ cd lpg-all-courses
 
 ### 2. Run the script
 
-To run the script to get all the courses, within the `lpg-all-courses` directory execute the run script:
+To run the script to get all the courses, within the `lpg-all-courses` directory execute the run script.
+
+#### With Docker
 
 Mac / Linux:
 
@@ -30,6 +32,14 @@ Windows (PowerShell)
 
 ```sh
 .\run.ps1
+```
+
+#### Without Docker
+
+To run the script without Docker, you'll need to install NodeJS first:
+
+```sh
+npm i && npm start
 ```
 
 This script will generate a CSV file called `csl_courses_<day>_<month>_<year>.csv` in the root directory.
