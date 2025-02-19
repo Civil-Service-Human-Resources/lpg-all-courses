@@ -1,4 +1,0 @@
-{
-    "fields": ["title", "status"],
-    "outputFile": "./courses.csv"
-}
